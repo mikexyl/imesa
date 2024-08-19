@@ -1,0 +1,9 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+find_dependency(GTSAM REQUIRED)
+
+include("${CMAKE_CURRENT_LIST_DIR}/imesaTargets.cmake")
+
+set(imesa_INCLUDE_DIRS "@CMAKE_CURRENT_SOURCE_DIR@/include")
+set(imesa_LIBRARIES imesa)
